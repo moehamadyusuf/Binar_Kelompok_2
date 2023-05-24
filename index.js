@@ -4,6 +4,7 @@ const { sequelize } = require('./models')
 const passport = require ('./lib/passport')
 const session = require ('express-session')
 
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.set ('view engine', 'ejs')
