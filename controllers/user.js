@@ -99,11 +99,11 @@ exports.login = async (req,res) =>{
 
         const checkEmail = await Users.findOne({where:{email:email}})
         if(!checkEmail){
-            return res.status(400).send('email not found')
+            return res.render('login',{error:'email tidak ada'})
         }
         const resultLogin = bcrypt.compareSync(password, checkEmail.password)
         if(!resultLogin){
-            return res.status(400).send('something was wrong')
+            return res.render('login',{error:'password salah'})
         } 
 
         //token

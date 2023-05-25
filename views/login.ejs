@@ -30,7 +30,9 @@
     </form>
 
     <hr>
-    <p><%= message %></p>
+    <% if (typeof error !== 'undefined') { %>
+        <p class="error"><%= error %></p>
+    <% } %>
     <p>Need an account? <a href="/register">Register</a></p>
     <p>Or go <a href="/">home</a>.</p>
 
