@@ -1,6 +1,7 @@
 const ctrl = require('../controllers/user')
 const router = require('express').Router()
 const restrict = require('../middleware/restrict')
+const media = require('../controllers/media')
 
 
 
@@ -17,5 +18,11 @@ router
     })
     
     .get('/whoami',restrict, ctrl.whoami)
+
+    .post('/uploadProfile', media.upload.single('photos'),(req,res)=>{
+        res.send(req.files)
+    })
+
+    .post('/uploadMedia', media.uploads, media.uploadFile)
 
 module.exports = router    

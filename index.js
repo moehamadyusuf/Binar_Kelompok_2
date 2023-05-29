@@ -3,22 +3,27 @@ const app = express()
 const { sequelize } = require('./models')
 const passport = require ('./lib/passport')
 const session = require ('express-session')
+const multer = require('multer')
 
 
-app.use(express.json())
-app.use(express.urlencoded({extended:true}))
-app.set ('view engine', 'ejs')
-app.use(session({
-    secret:'rahasia',
-    resave:false,
-    saveUninitialized: false
-}))
+// app.use(express.json())
+// app.use(express.urlencoded({extended:true}))
+// app.set ('view engine', 'ejs')
+// app.use(session({
+//     secret:'rahasia',
+//     resave:false,
+//     saveUninitialized: false
+// }))
 
-app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.initialize())
+// app.use(passport.session())
+
+
+
 
 //middleware USER
 app.use(require("./router/user"))
+
 
 const connectDb = async ()=>{
     console.log('Checking database connection...')
