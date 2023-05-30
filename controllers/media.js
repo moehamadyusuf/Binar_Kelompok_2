@@ -1,6 +1,7 @@
 const multer = require('multer')
 const cloudinary = require('cloudinary')
 const fs = require('fs')
+const {Users} = require('../models')
 
 const storage = multer.diskStorage({
     destination: function(req,file,callback){
@@ -37,12 +38,25 @@ const uploadFile = async (req,res)=>{
     
     const url = await uploadCloudinary(req.file.path)
     if (url){
+        const curent = req.user
+        // return res.json({
+        //     id:curent.id,
+        //     email: curent.email
+        // })
+        Users.update({
+            photoProfile: url,
+        },
+        {
+            where:{ email : curent.email }
+        })
         return res.json({
+            email : curent.email,
             message: 'upload berhasil',
             url:url,
         })
     } else {
         return res.json({
+            email: curent.email,
             message: 'upload gagal',
         })
     }

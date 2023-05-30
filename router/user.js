@@ -23,6 +23,6 @@ router
         res.send(req.files)
     })
 
-    .post('/uploadMedia', media.uploads, media.uploadFile)
+    .post('/uploadMedia',restrict, media.uploads, media.uploadFile)
 
 module.exports = router    
