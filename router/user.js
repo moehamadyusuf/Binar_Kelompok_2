@@ -19,7 +19,7 @@ router
     
     .get('/whoami',restrict, ctrl.whoami)
 
-    .post('/uploadProfile', media.upload.single('photos'),(req,res)=>{
+    .post('/uploadProfile', media.uploads,(req,res)=>{
         res.send(req.files)
     })
 
