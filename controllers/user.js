@@ -122,7 +122,7 @@ exports.login = async (req,res) =>{
     }
 }
 
-exports.whoami = (req,res)=>{
+exports.siapaSaya = (req,res)=>{
     const curent = req.user
     return res.json({
         id:curent.id,

@@ -17,7 +17,7 @@ router
         return res.render('home')    
     })
     
-    .get('/whoami',restrict, ctrl.whoami)
+    .get('/siapaSaya',restrict, ctrl.siapaSaya)
 
     .post('/uploadProfile', media.uploads,(req,res)=>{
         res.send(req.files)
