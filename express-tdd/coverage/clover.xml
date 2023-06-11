@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1686058787449" clover="3.2.0">
-  <project timestamp="1686058787449" name="All files">
-    <metrics statements="56" coveredstatements="55" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="60" coveredelements="59" complexity="0" loc="56" ncloc="56" packages="3" files="4" classes="4"/>
+<coverage generated="1686409703039" clover="3.2.0">
+  <project timestamp="1686409703039" name="All files">
+    <metrics statements="74" coveredstatements="68" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="2" elements="82" coveredelements="75" complexity="0" loc="74" ncloc="74" packages="3" files="4" classes="4"/>
     <package name="express-tdd">
-      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="app.js" path="C:\Users\moeha\Desktop\Binar Platinum\express-tdd\app.js">
-        <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="31" coveredstatements="31" conditionals="3" coveredconditionals="3" methods="0" coveredmethods="0"/>
+      <file name="app.js" path="C:\Users\moeha\Desktop\Platinum\express-tdd\app.js">
+        <metrics statements="31" coveredstatements="31" conditionals="3" coveredconditionals="3" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -26,12 +26,23 @@
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
       </file>
     </package>
     <package name="express-tdd.controllers">
-      <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="baseController.js" path="C:\Users\moeha\Desktop\Binar Platinum\express-tdd\controllers\baseController.js">
-        <metrics statements="18" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <metrics statements="25" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <file name="baseController.js" path="C:\Users\moeha\Desktop\Platinum\express-tdd\controllers\baseController.js">
+        <metrics statements="25" coveredstatements="20" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
         <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -48,13 +59,20 @@
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="express-tdd.routes">
       <metrics statements="18" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.js" path="C:\Users\moeha\Desktop\Binar Platinum\express-tdd\routes\index.js">
+      <file name="index.js" path="C:\Users\moeha\Desktop\Platinum\express-tdd\routes\index.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -66,7 +84,7 @@
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
-      <file name="users.js" path="C:\Users\moeha\Desktop\Binar Platinum\express-tdd\routes\users.js">
+      <file name="users.js" path="C:\Users\moeha\Desktop\Platinum\express-tdd\routes\users.js">
         <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
